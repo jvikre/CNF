@@ -172,20 +172,20 @@ ul, ol {
 
 
 // Layout
-#fh5co-header {
+#header {
 	margin-top: 7em;
 	margin-bottom: 7em;
 	@media screen and (max-width: $screen-sm) {
 		margin-top: 4em;
 		margin-bottom: 2em;
 	}
-	#fh5co-logo {
+	#logo {
 		margin-bottom: .7em;
 		@media screen and (max-width: $screen-sm) {
 			margin-bottom: .5em;
 		}
 	}
-	#fh5co-main-nav {
+	#main-nav {
 		display: block;
 		padding: 5px 0;
 		float: left;
@@ -195,7 +195,7 @@ ul, ol {
 			display: none;
 		}
 	}
-	#fh5co-nav {
+	#nav {
 		text-align: center;
 		li {
 			display: inline-block;
@@ -273,9 +273,9 @@ ul, ol {
 }
 
 // Title
-.fh5co-section-title,
-.fh5co-page-title {
-	.fh5co-title {
+.section-title,
+.page-title {
+	.title {
 		font-family: $sans-serif-alt;
 		text-transform: uppercase;
 		border-bottom: 2px solid $brand-darker;
@@ -283,15 +283,15 @@ ul, ol {
 		line-height: 40px;
 		display: inline-block;
 	}
-	.fh5co-title-sub {
+	.title-sub {
 		font-size: 20px;
 		font-weight: 300!important;
 		line-height: 30px;
 		color: $brand-gray-alt;
 	}
 }
-.fh5co-page-title {
-	.fh5co-title {
+.page-title {
+	.title {
 		font-size: 45px;
 		line-height: 55px;
 	}
@@ -303,7 +303,7 @@ ul, ol {
 	margin-bottom: 3em;
 	position: relative;
 	padding-bottom: 30px;
-	.fh5co-border {
+	.border {
 		position: absolute;
 		bottom: 0;
 		left: 0;
@@ -396,7 +396,7 @@ ul, ol {
 				margin-top: 0;
 				position: relative;
 				padding-bottom: 10px;
-				.fh5co-border {
+				.border {
 					position: absolute;
 					left: 0;
 					bottom: 0;
@@ -418,7 +418,7 @@ ul, ol {
 }
 
 
-#fh5co-footer {
+#footer {
 	padding: 5em 0;
 	a {
 		color: darken($brand-gray, 7%);
@@ -442,7 +442,7 @@ ul, ol {
 	.fh5co-copyright {
 		font-size: 13px;
 	}
-	.fh5co-footer-widget {
+	.footer-widget {
 		margin-bottom: 10px;
 		@media screen and (max-width: $screen-sm) {
 			margin-bottom: 30px;
@@ -482,7 +482,7 @@ ul, ol {
 	}
 
 }
-.fh5co-social {
+.social {
 	padding: 0;
 	margin: 3em 0 0 0;
 	float: right;
@@ -512,7 +512,7 @@ ul, ol {
 }
 
 // Burger Menu
-.fh5co-nav-toggle {
+.nav-toggle {
   display: inline-block;
   width:25px;
   height:25px;
@@ -544,7 +544,7 @@ ul, ol {
 		  transition:all .2s ease-out;
 	  }
   }
-  &.fh5co-nav-white {
+  &.nav-white {
   	> i {
   		color:$brand-white;
   		background: $brand-white;
@@ -555,22 +555,22 @@ ul, ol {
   }
 }
 
-.fh5co-nav-toggle i::before {
+.nav-toggle i::before {
   top: -7px;
 }
-.fh5co-nav-toggle i::after {
+.nav-toggle i::after {
   bottom: -7px;
 }
-.fh5co-nav-toggle:hover i::before {
+.nav-toggle:hover i::before {
   top: -10px;
 }
-.fh5co-nav-toggle:hover i::after {
+.nav-toggle:hover i::after {
   bottom: -10px;
 }
-.fh5co-nav-toggle.active i {
+.nav-toggle.active i {
 	background: transparent;
 }
-.fh5co-nav-toggle.active i::before {
+.nav-toggle.active i::before {
   top:0;
   -webkit-transform: rotateZ(45deg);
      -moz-transform: rotateZ(45deg);
@@ -578,7 +578,7 @@ ul, ol {
        -o-transform: rotateZ(45deg);
           transform: rotateZ(45deg);
 }
-.fh5co-nav-toggle.active i::after {
+.nav-toggle.active i::after {
   bottom:0;
   -webkit-transform: rotateZ(-45deg);
      -moz-transform: rotateZ(-45deg);
@@ -586,7 +586,7 @@ ul, ol {
        -o-transform: rotateZ(-45deg);
           transform: rotateZ(-45deg);
 }
-.fh5co-nav-toggle {
+.nav-toggle {
   position: relative;
   margin-left:0px;
   margin-top:0px;
@@ -598,7 +598,7 @@ ul, ol {
   	display: block;
   }
 }
-.fh5co-sidebar-nav {
+.sidebar-nav {
 	ul {
 		padding: 0;
 		margin: 0;
@@ -615,7 +615,7 @@ ul, ol {
 			}
 		}
 	}
-	.fh5co-sidebar-nav-desc {
+	.sidebar-nav-desc {
 		font-size: 14px;
 		color: $brand-gray!important;
 		line-height: 20px;
@@ -623,7 +623,7 @@ ul, ol {
 		cursor: pointer;
 	}
 	a:hover {
-		.fh5co-sidebar-nav-desc {
+		.sidebar-nav-desc {
 			color: $brand-darker!important;
 		}
 	}
@@ -893,45 +893,45 @@ ul, ol {
 }
 
 // Spacer
-.fh5co-spacer {
+.spacer {
 	clear: both;
 	position: relative;
 	border: none;
 	padding: 0;
 	margin: 0;
 }
-.fh5co-spacer-xlg {
+.spacer-xlg {
 	height: 150px;
 	@media screen and (max-width: $screen-sm) {
 		height: 80px;
 	}
 
 }
-.fh5co-spacer-lg {
+.spacer-lg {
 	height: 100px;
 	@media screen and (max-width: $screen-sm) {
 		height: 70px;
 	}
 }
-.fh5co-spacer-md {
+.spacer-md {
 	height: 80px;
 	@media screen and (max-width: $screen-sm) {
 		height: 50px;
 	}
 }
-.fh5co-spacer-sm {
+.spacer-sm {
 	height: 50px;
 	@media screen and (max-width: $screen-sm) {
 		height: 20px;
 	}
 }
-.fh5co-spacer-xs {
+.spacer-xs {
 	height: 30px;
 	@media screen and (max-width: $screen-sm) {
 		height: 20px;
 	}
 }
-.fh5co-spacer-xxs {
+.spacer-xxs {
 	height: 30px;
 }
 
@@ -942,7 +942,7 @@ ul, ol {
 	margin-bottom: 0!important;
 }
 
-.fh5co-uppercase-heading-sm {
+.uppercase-heading-sm {
 	font-size: 14px;
 	line-height: 26px;
 	text-transform: uppercase;
@@ -951,7 +951,7 @@ ul, ol {
 	&.with-border {
 		position: relative;
 		padding-bottom: 10px;
-		.fh5co-border {
+		.border {
 			position: absolute;
 			bottom: 0;
 			left: 0;
@@ -971,12 +971,12 @@ ul, ol {
 } 
 
 // Call to Action
-.fh5co-call-to-action {
+.call-to-action {
 	background-color: $brand-primary;
 	background-size: cover;
 	background-attachment: fixed;
 	position: relative;
-	.fh5co-call-to-action-text {
+	.call-to-action-text {
 		font-size: 50px;
 		line-height: 60px;
 		font-family: $sans-serif-alt;
@@ -996,13 +996,13 @@ ul, ol {
 		background: rgba(0, 0, 0, .5);
 	}
 
-	.fh5co-call-to-action-wrap {
+	.call-to-action-wrap {
 		position: relative;
 		// height: 300px;
 		padding: 50px 0;
 		display: table;
 		width: 100%;
-		.fh5co-call-to-action-inner {
+		.call-to-action-inner {
 			display: table-cell;
 			vertical-align: middle;
 			font-size: 50px;
@@ -1137,7 +1137,7 @@ a > img {
 	}
 }
 
-.fh5co-gotop {
+.gotop {
 	position: fixed;
 	bottom: 20px;
 	right: 20px;
@@ -1161,7 +1161,7 @@ a > img {
 
 
 /* Easy Rsponsive Tabs */
-.fh5co-tab {
+.tab {
 	clear: both;
 	display: block;
 }
@@ -1175,7 +1175,7 @@ a > img {
     display: block;
     
 }
-.fh5co-tab-menu-icon {
+.tab-menu-icon {
 	font-size: 20px;
 	position: relative;
 	float: left;
@@ -1293,7 +1293,7 @@ a > img {
 		margin-right: 10px;
 	}
 }
-.fh5co-uppercase-heading-sm {
+.uppercase-heading-sm {
 	font-size: 14px;
 	line-height: 26px;
 	text-transform: uppercase;

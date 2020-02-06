@@ -71,7 +71,7 @@ $(function(){
 	};
 
 	var menuAnimate = function(o, mleft, duration, mul) {
-		var navLi = $('#fh5co-nav > ul > li');
+		var navLi = $('#nav > ul > li');
 		navLi.each( function(k){
 			var el = $(this);
 			setTimeout(function() {
@@ -85,11 +85,11 @@ $(function(){
 	};
 
 	var burgerMenu = function() {
-		$('body').on('click', '.js-fh5co-nav-toggle', function(){
-			$('#fh5co-nav > ul > li').css({ marginLeft: -50, opacity: 0 });
+		$('body').on('click', '.js-nav-toggle', function(){
+			$('#nav > ul > li').css({ marginLeft: -50, opacity: 0 });
 			$(this).toggleClass('active');
 			
-			var mainNav = $('#fh5co-main-nav');
+			var mainNav = $('#main-nav');
 			mainNav.slideToggle(400).toggleClass('active');
 			$('body').css({"marginTop": "100"});
 
@@ -104,14 +104,14 @@ $(function(){
 
 	var mobileMenuState = function() {
 		if ( $(window).width() > 768 ) {
-			$('#fh5co-main-nav').removeClass('active').show();
-			$('#fh5co-nav > ul > li').css({
+			$('#main-nav').removeClass('active').show();
+			$('#nav > ul > li').css({
 				opacity: 1,
 				marginLeft: 0
 			})
 		} else {
-			$('.js-fh5co-nav-toggle').removeClass('active');
-			$('#fh5co-main-nav').hide();
+			$('.js-nav-toggle').removeClass('active');
+			$('#main-nav').hide();
 		}
 	};
 
@@ -125,7 +125,7 @@ $(function(){
 
 	// Easy Repsonsive Tabs
 	var responsiveTabs = function(){
-		$('#fh5co-tab-feature').easyResponsiveTabs({
+		$('#tab-feature').easyResponsiveTabs({
 	      type: 'default',
 	      width: 'auto', 
 	      fit: true, 
@@ -136,7 +136,7 @@ $(function(){
 	      tabidentify: 'hor_1'
 	            
 	    });
-	    $('#fh5co-tab-feature-center').easyResponsiveTabs({
+	    $('#tab-feature-center').easyResponsiveTabs({
 	      type: 'default',
 	      width: 'auto',
 	      fit: true, 
@@ -147,7 +147,7 @@ $(function(){
 	      tabidentify: 'hor_1' 
 	      
 	    });
-	    $('#fh5co-tab-feature-vertical').easyResponsiveTabs({
+	    $('#tab-feature-vertical').easyResponsiveTabs({
 	      type: 'vertical',
 	      width: 'auto',
 	      fit: true,
@@ -218,12 +218,12 @@ $(function(){
 
 		$(window).scroll(function(){
 			if ($(window).scrollTop() > 100 ) {
-				$('.fh5co-gotop').show();
+				$('.gotop').show();
 			} else {
-				$('.fh5co-gotop').hide();
+				$('.gotop').hide();
 			}
 		});
-		$('.fh5co-gotop').click(function(event){
+		$('.gotop').click(function(event){
 
 		    $('html, body').animate({
 		        scrollTop: 0
