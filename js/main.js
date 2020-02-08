@@ -170,7 +170,8 @@ $(function(){
 		    margin: 0,
 		    responsiveClass: true,
 		    nav: true,
-		    dots: true,
+			dots: true,
+			loop:true,
 			// smartSpeed: 500,
 			navText : ["<i class='icon icon-chevron-left'></i>","<i class='icon icon-chevron-right'></i>"]
 		});
@@ -202,6 +203,32 @@ $(function(){
 			}
 		});
 	}
+
+	var productCarousel = function(){
+		$('.carousel-product').owlCarousel({
+		loop: true,
+		margin: 10,
+		nav: true,
+		navText: [
+		  "<i class='fa fa-caret-left'></i>",
+		  "<i class='fa fa-caret-right'></i>"
+		],
+		autoplay: true,
+		autoplayHoverPause: true,
+		responsive: {
+		  0: {
+			items: 1
+		  },
+		  600: {
+			items: 3
+		  },
+		  1000: {
+			items: 5
+		  }
+		}
+	  });
+	}
+	
 
 	// MagnificPopup
 	var magnifPopup = function() {
@@ -244,6 +271,7 @@ $(function(){
 		magnifPopup();
 		owlCarouselFeatureSlide();
 		cafeCarousel();
+		productCarousel();
 		sScrollTop();
 		wResize();
 	});

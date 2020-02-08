@@ -21,7 +21,7 @@ body {
   font-weight: 300;
   letter-spacing: .05em;
   border: 2px solid #f4af4b;
-  margin: 15px 40px;
+  margin: 25px;
 }
 
 @media screen and (max-width: 1000px) {
@@ -128,6 +128,10 @@ p, img {
   margin: 0 0 20px 0;
 }
 
+img {
+  border: 2px solid #f4af4b;
+}
+
 ul, ol {
   padding-left: 15px;
   line-height: 24px;
@@ -152,7 +156,13 @@ ul ul, ul ol, ol ul, ol ol {
 
 .logo-img {
   display: inline !important;
+  border: none;
 }
+
+.mfp-zoom-out-cur img {
+  border: none !important;
+}
+
 @media screen and (max-width: 768px) {
   #header #logo {
     margin-bottom: .5em;
@@ -198,7 +208,7 @@ ul ul, ul ol, ol ul, ol ol {
   right: 2px;
   top: 50%;
   content: '';
-  height: 2px;
+  height: 1px;
   width: 15px;
   background: #f4af4b;
 }
@@ -650,12 +660,20 @@ ul ul, ul ol, ol ul, ol ol {
 }
 
 
-.owl-carousel .item{
+/* .owl-carousel .item{
   margin: 50px;
+  } */
+
+  .owl-carousel-fullwidth .owl-item, .insta {
+    padding: 10px 200px;
+  }
+
+  .insta {
+    padding: 10px 100px
   }
 
 .owl-carousel-fullwidth .owl-item img {
-  padding: 0px 100px;
+  padding: 25px 25px;
 }
 
   @media screen and (max-width: 768px) {
@@ -826,6 +844,10 @@ ul ul, ul ol, ol ul, ol ol {
 #map {
   width: 100%;
   height: 400px;
+}
+
+#map img {
+  border: none;
 }
 
 /* Buttons */
@@ -1219,7 +1241,7 @@ a > img.fh5co-align-center {
 
 .gotop {
   position: fixed;
-  bottom: 30px;
+  bottom: 45px;
   right: 45px;
   display: none;
   color: #ffffff !important;
@@ -1251,9 +1273,7 @@ a > img.fh5co-align-center {
 }
 
 .resp-tab-active {
-  color: #f4af4b
-
-;
+  color: #f4af4b;
 }
 
 .resp-tabs-list li {
@@ -1291,6 +1311,44 @@ a > img.fh5co-align-center {
 .product-list li {
   list-style-type: none;
 }
+
+/* Product-carousel */
+
+.carousel-wrap {
+  margin: 90px auto;
+  padding: 0 5%;
+  width: 80%;
+  position: relative;
+}
+
+/* fix blank or flashing items on carousel */
+.carousel-product .item {
+  position: relative;
+  z-index: 100; 
+  -webkit-backface-visibility: hidden;
+}
+
+/* end fix */
+.carousel-product .owl-nav > div {
+  margin-top: -26px;
+  position: absolute;
+  top: 50%;
+  color: #cdcbcd;
+}
+
+.carousel-product .owl-nav i {
+  font-size: 52px;
+}
+
+.carousel-product .owl-nav .owl-prev {
+  left: -30px;
+}
+
+.carousel-product .owl-nav .owl-next {
+  right: -30px;
+}
+
+
 
 /* Pricing Tables */
 .fh5co-pricing-table-1 {
