@@ -14,7 +14,7 @@ DESIGNED & DEVELOPED by FREEHTML5.CO
   font-style: normal;
 }
 body {
-  font-family: "Lato", sans-serif;
+  font-family: "raleway", sans-serif;
   font-size: 16px;
   line-height: 26px;
   color: #2e2e2e;
@@ -82,7 +82,7 @@ figure.fh5co-with-caption figcaption {
 h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
   margin: 0 0 20px 0;
   padding: 0;
-  font-family: "Lato", sans-serif;
+  font-family: "raleway", sans-serif;
   font-weight: 400;
 }
 
@@ -265,7 +265,7 @@ ul ul, ul ol, ol ul, ol ol {
 
 .section-title .title,
 .page-title .title {
-  font-family: "Unica One", sans-serif;
+  font-family: "playfair display", sans-serif;
   text-transform: uppercase;
   border-bottom: 2px solid #2e2e2e;
   font-size: 30px;
@@ -664,7 +664,7 @@ ul ul, ul ol, ol ul, ol ol {
   margin: 50px;
   } */
 
-  .owl-carousel-fullwidth .owl-item, .insta {
+  .owl-carousel-fullwidth .owl-item {
     padding: 10px 200px;
   }
 
@@ -852,7 +852,7 @@ ul ul, ul ol, ol ul, ol ol {
 
 /* Buttons */
 .btn {
-  font-family: "Lato", sans-serif;
+  font-family: "playfair display", sans-serif;
   /* border-bottom: none !important; */
   text-transform: uppercase;
   letter-spacing: 2px;
@@ -1069,7 +1069,7 @@ background: linear-gradient(to right, #FFD200, #F7971E); /* W3C, IE 10+/ Edge, F
 .call-to-action .call-to-action-text {
   font-size: 50px;
   line-height: 60px;
-  font-family: "Unica One", sans-serif;
+  font-family: "playfair display", sans-serif;
   text-transform: uppercase;
 }
 .call-to-action .btn {
@@ -1276,8 +1276,18 @@ a > img.fh5co-align-center {
   color: #f4af4b;
 }
 
-.resp-tabs-list li {
-  font-family: "Lato", sans-serif;
+.resp-tabs-list li, .product-list li {
+  font-family: "raleway", sans-serif;
+  list-style: none;
+}
+
+.product-list li a {
+  color: #8A8531;
+}
+
+.product-list li a:hover {
+  font-weight: 700;
+  color:  	#f4af4b;
 }
 
 .resp-content-active, .resp-accordion-active {
@@ -1352,7 +1362,7 @@ a > img.fh5co-align-center {
 
 /* Pricing Tables */
 .fh5co-pricing-table-1 {
-  font-family: "Lato", sans-serif;
+  font-family: "playfair display", sans-serif;
 }
 @media screen and (max-width: 992px) {
   .fh5co-pricing-table-1 .fh5co-pricing-table-item {
@@ -1434,7 +1444,7 @@ a > img.fh5co-align-center {
 }
 
 .fh5co-link {
-  font-family: "Lato", sans-serif;
+  font-family: "playfair display", sans-serif;
 }
 .fh5co-link > i {
   margin-right: 5px;
