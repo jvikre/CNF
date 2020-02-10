@@ -169,7 +169,7 @@ $(function(){
 			items: 1,
 		    margin: 0,
 		    responsiveClass: true,
-		    nav: true,
+		    nav: false,
 			dots: true,
 			loop:true,
 			// smartSpeed: 500,
