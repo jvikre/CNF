@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "",
+    "sources": [
+        "grid-framework.scss"
+    ],
+    "names": [],
+    "file": "grid-framework.css"
+}

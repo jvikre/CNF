@@ -1,3 +1,6 @@
+
+
+
 //google map
 
 function initMap() {
@@ -26,7 +29,7 @@ function initMap() {
   }
   
  
-
+//load header and footer
 
 $(function(){
 	$('#header').load('header.html', function () {
@@ -35,15 +38,6 @@ $(function(){
 	$('#footer').load('footer.html'); 
   });
 
-// $(function(){
-// 	$("#header").load("header.html"); 
-// 	$("#footer").load("footer.html"); 
-//   });
-// $(document).ready(function() {
-// 	// get current URL path and assign 'active' class
-// 	var pathname = window.location.pathname;
-// 	$('ul.nav li > a[href="/'+pathname+'"]').parent().addClass('active');
-// });
 
 
 ;(function () {
@@ -159,76 +153,6 @@ $(function(){
 	    });
 	};
 
-	// Owl Carousel
-	var owlCarouselFeatureSlide = function() {
-		$('.owl-carousel').owlCarousel({
-			animateOut: 'fadeOut',
-			autoplay: true,
-			autoplayTimeout: 5000,
-			autoHeight: true,
-			items: 1,
-		    margin: 0,
-		    responsiveClass: true,
-		    nav: false,
-			dots: true,
-			loop:true,
-			// smartSpeed: 500,
-			navText : ["<i class='icon icon-chevron-left'></i>","<i class='icon icon-chevron-right'></i>"]
-		});
-	};
-
-	var cafeCarousel = function(){
-		$('.carousel-cafe').owlCarousel({
-			autoplay: true,
-			autoplayTimeout: 3000,
-			autoplayHoverPause: true,
-			autoHeight: true,
-			loop: true,
-			margin: 30,
-			stagePadding: 0,
-			nav: false,
-			dotsEach: true,
-			slideSpeed: 500,
-			// navText: ['<span class="ion-ios-arrow-back">', '<span class="ion-ios-arrow-forward">'],
-			responsive:{
-				0:{
-					items: 1
-				},
-				600:{
-					items: 3
-				},
-				1000:{
-					items: 3
-				}
-			}
-		});
-	}
-
-	var productCarousel = function(){
-		$('.carousel-product').owlCarousel({
-		loop: true,
-		margin: 10,
-		nav: true,
-		navText: [
-		  "<i class='fa fa-caret-left'></i>",
-		  "<i class='fa fa-caret-right'></i>"
-		],
-		autoplay: true,
-		autoplayHoverPause: true,
-		responsive: {
-		  0: {
-			items: 1
-		  },
-		  600: {
-			items: 3
-		  },
-		  1000: {
-			items: 5
-		  }
-		}
-	  });
-	}
-	
 
 	// MagnificPopup
 	var magnifPopup = function() {
@@ -269,12 +193,29 @@ $(function(){
 		mobileFastClick();
 		responsiveTabs();
 		magnifPopup();
-		owlCarouselFeatureSlide();
-		cafeCarousel();
-		productCarousel();
 		sScrollTop();
 		wResize();
 	});
 
 
 }());
+
+
+
+// init Masonry
+var $grid = $('.grid').masonry({
+	itemSelector: '.grid-item',
+	percentPosition: true,
+	columnWidth: '.grid-sizer'
+  });
+  // layout Masonry after each image loads
+  $grid.imagesLoaded().progress( function() {
+	$grid.masonry();
+  });  
+  
+
+//   Cafe Carousel
+$('.carousel').carousel({
+	interval: 4000
+
+  });
