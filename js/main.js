@@ -203,16 +203,10 @@ $(function(){
 
 
 // init Masonry
-var $grid = $('.grid').masonry({
-	itemSelector: '.grid-item',
-	percentPosition: true,
-	columnWidth: '.grid-sizer'
-  });
-  // layout Masonry after each image loads
-  $grid.imagesLoaded().progress( function() {
-	$grid.masonry();
-  });  
-  
+$('.grid').colcade({
+	columns: '.grid-col',
+	items: '.grid-item'
+  })
 
 //   Cafe Carousel
 $('.carousel').carousel({

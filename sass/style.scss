@@ -93,9 +93,9 @@ body {
 
 a {
 	@include transition(.5s);
-	&:hover {
+	// &:hover {
 		
-	}
+	// }
 	&:hover, &:active, &:focus {
 		outline: none;
 		text-decoration: none;
@@ -588,18 +588,18 @@ ul, ol {
 .btn-danger {
 	border-color: transparent;
 }
-.btn-default, 
-.btn-primary, 
-.btn-success, 
-.btn-info, 
-.btn-warning, 
-.btn-danger {
-	&:hover, &:active, &:focus {
+// .btn-default, 
+// .btn-primary, 
+// .btn-success, 
+// .btn-info, 
+// .btn-warning, 
+// .btn-danger {
+// 	&:hover, &:active, &:focus {
 		
 
-		// color: $brand-white;
-	}
-}
+// 		// color: $brand-white;
+// 	}
+// }
 
 
 // Input Text 
@@ -835,5 +835,4 @@ a > img {
 		margin-top: 7px;
 	}
 }
-
 

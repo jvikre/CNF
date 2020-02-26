@@ -213,7 +213,7 @@ ul ul, ul ol, ol ul, ol ol {
     width: 100%;
   }
   #header .header-widget .header-info ul{
-    font-size: 8px;
+    font-size: 14px;
     text-align: center;
     line-height: normal;
   }
@@ -968,42 +968,33 @@ div#masonry:hover img:hover {opacity:1}
   list-style-type: none;
 }
 
-
-/* Image Grid */
-/* ---- grid ---- */
+/* colcade grid */
 
 .grid {
-    width: 100%;
+  display: flex;
 }
 
-/* clear fix */
-.grid:after {
-  content: '';
-  display: block;
-  clear: both;
-}
-
-/* ---- .grid-item ---- */
-
-.grid-sizer,
-.grid-item {
-  width: 33.333%;
+.grid-col {
+  flex: 1;
 }
 
 .grid-item {
-  float: left;
-  padding: 5px;
+  padding: .1em;
 }
 
-.grid-item img {
-  display: block;
-  max-width: 100%;
+.grid-item p {
+  margin: 0;
 }
+
+@media (max-width: 480px) {
+  .grid-col--2 {
+    display: none;
+  }
+}
+
 
 
 /* cafe carousel */
-
-
 .carousel-fade .carousel-inner .item {
   -webkit-transition-property: opacity;
   transition-property: opacity;
