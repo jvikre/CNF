@@ -66,7 +66,7 @@ a:hover, a:active, a:focus {
   outline: none;
   text-decoration: none;
 }
-
+/* 
 figure.fh5co-with-caption {
   float: left;
   width: 100%;
@@ -81,7 +81,7 @@ figure.fh5co-with-caption figcaption {
   font-size: 14px;
   margin-bottom: 20px;
   color: #7b7b7b;
-}
+} */
 
 h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
   margin: 0 0 20px 0;
@@ -180,6 +180,10 @@ ul ul, ul ol, ol ul, ol ol {
   height:auto;
   display:block;
   z-index:999;
+}
+
+.footer-logo:hover {
+width: auto;
 }
 
 #header .header-info {
@@ -351,7 +355,8 @@ ul ul, ul ol, ol ul, ol ol {
   background-repeat: no-repeat;
   background-size: cover;
   margin: 10px 0px;
-  box-shadow: 0 0 8px 8px white inset;
+  border: 1px solid #f4af4b;
+  /* box-shadow: 0 0 8px 8px white inset; */
 }
 
 @media screen and (max-width: 768px) {
@@ -612,12 +617,7 @@ ul ul, ul ol, ol ul, ol ol {
   outline: none !important;
   border-color: transparent;
 }
-/* .btn.fh5co-btn-icon {
-  text-transform: none !important;
-  letter-spacing: normal !important;
-  padding-left: 15px;
-  padding-right: 15px;
-} */
+
 .btn.btn-lg {
   padding: 30px;
 }
@@ -825,14 +825,7 @@ ul ul, ul ol, ol ul, ol ol {
 }
 
 
-/* .call-to-action > .fh5co-overlay {
-  left: 0;
-  right: 0;
-  top: 0;
-  bottom: 0;
-  position: absolute;
-  background: rgba(0, 0, 0, 0.5);
-} */
+
 .call-to-action .call-to-action-wrap {
   position: relative;
   padding: 50px 0;

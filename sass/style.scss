@@ -102,25 +102,6 @@ a {
 	}
 }
 
-figure {
-	&.fh5co-with-caption {
-		float: left;
-		width: 100%;
-		margin: 0;
-		padding: 0;
-		img {
-			margin-bottom: 0!important;
-		}
-		figcaption {
-			font-style: italic;
-			font-size: 14px;
-			margin-bottom: 20px;
-			color: $brand-gray-alt;
-		}
-	}
-}
-
-
 h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
 	margin: 0 0 20px 0;
 	padding: 0;	
@@ -321,17 +302,11 @@ ul, ol {
 			margin-bottom: 10px;
 		}
 	}
-	.fh5co-copyright {
-		font-size: 13px;
-	}
 	.footer-widget {
 		margin-bottom: 10px;
 		@media screen and (max-width: $screen-sm) {
 			margin-bottom: 30px;
 		}
-	}
-	.fh5co-copyright {
-		color: $brand-gray-alt;
 	}
 }
 
@@ -517,11 +492,6 @@ ul, ol {
 		outline: none!important;
 		border-color: transparent;
 	}
-	&.fh5co-btn-icon {
-		text-transform: none!important;
-		letter-spacing: normal!important;
-		padding-left: 15px;
-		padding-right: 15px;
 	}
 	&.btn-lg {
 		padding: 30px;
@@ -658,13 +628,6 @@ ul, ol {
 	height: 30px;
 }
 
-.fh5co-letter-spacing {
-	letter-spacing: 1px;
-}
-.fh5co-no-margin-bottom {
-	margin-bottom: 0!important;
-}
-
 .uppercase-heading-sm {
 	font-size: 14px;
 	line-height: 26px;
@@ -710,14 +673,6 @@ ul, ol {
 		padding-left: 50px;
 		padding-right: 50px;
 	}
-	> .fh5co-overlay {
-		left: 0;
-		right: 0;
-		top: 0;
-		bottom: 0;
-		position: absolute;
-		background: rgba(0, 0, 0, .5);
-	}
 
 	.call-to-action-wrap {
 		position: relative;
@@ -734,57 +689,6 @@ ul, ol {
 			width: 100%;
 			
 		}
-	}
-}
-
-
-
-
-// Image Alignment
-img {
-	&.fh5co-align-right {
-		float:right; 
-		margin:0 0 .5em 1em;
-		@media screen and (max-width: $screen-xs) {
-			width: 100%;
-			margin: 0 0 .5em 0;
-		}
-	}
-	&.fh5co-align-left {
-		float:left;
-		margin:0 1em .5em 0;
-		@media screen and (max-width: $screen-xs) {
-			width: 100%;
-			margin: 0 0 .5em 0;
-		}
-	}
-	&.fh5co-align-center {
-		display: block;
-		margin-left: auto;
-		margin-right: auto
-	}
-}
-a > img {
-	&.fh5co-align-right {
-		float:right;
-		margin:0 0 .5em 1em;
-		@media screen and (max-width: $screen-xs) {
-			width: 100%;
-			margin: 0 0 .5em 0;
-		}
-	}
-	&.fh5co-align-left {
-		float: left;
-		margin: 0 1em .5em 0;
-		@media screen and (max-width: $screen-xs) {
-			width: 100%;
-			margin: 0 0 .5em 0;
-		}
-	}
-	&.fh5co-align-center {
-		display: block;
-		margin-left: auto;
-		margin-right: auto
 	}
 }
 
